@@ -9,6 +9,8 @@ body {
   color: #20302E;
 }
 
+
+
 .btn {
   background-color: #20302E;
   text-decoration: none;
@@ -79,17 +81,20 @@ p {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    column-count: 2;
   }
 }
+@media (min-width: 800px) {
+  .row {
+    column-count:3; 
+  }
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  
+  float: left;
+  height: 180px;
+  width: 180px;
 }
+
 </style>
