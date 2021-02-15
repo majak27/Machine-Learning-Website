@@ -9,8 +9,6 @@ body {
   color: #20302E;
 }
 
-
-
 .btn {
   background-color: #20302E;
   text-decoration: none;
@@ -37,17 +35,22 @@ p {
   padding: 30px;
   text-align: center;
   font-size: 50px;
+  margin: 0, auto;
+  border: 0, auto;
 }
 /* Container for flexboxes */
 .row {
   display: -webkit-flex;
   display: flex;
+  margin: 0, auto;
+  border: 0, auto;
 }
 
 /* Create three unequal columns that sits next to each other */
 .column {
   padding: 10px;
-  height: 500px; /* Should be removed. Only for demonstration */
+  height: 500px; 
+  /* Should be removed. Only for demonstration */
 }
 
 /* Left and right column */
@@ -55,7 +58,6 @@ p {
    -webkit-flex: 1;
    -ms-flex: 1;
    flex: 1;
-   width: 15%;
    margin: 0 auto;
 }
 
@@ -64,9 +66,14 @@ p {
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  
+  border-style: double;
+  font-size: 15px;
+  border-right-style: none;
+  border-block-start: none;
+  border-block-end: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* Style the footer */
@@ -75,27 +82,58 @@ p {
   padding: 7px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  position: static;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 635px) {
-  .row {
-    column-count: 2;
-  }
+  .row {  }
   .btn {
     display: flex;
     flex-direction: column;
   }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .column, .column.middle, .column.side {
+    width: 96.75%;
+   }
+  .header {
+    font-size: 30px;
+    width: max;
+  }
+}
+@media (max-width: 450px) {
+  .row {  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    border: 8px 16px;
+    margin: 2px 1px;
+    font-size: 12px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .column, .column.middle, .column.side {
+    display: flex;
+    align-items: stretch;
+   }
+  .header {
+    font-size: 30px;
+    width: max;
+  }
 }
 
-img {
-  display: block;
+.img {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   float: left;
   height: 180px;
   width: 180px;
+  flex-direction: column;
 }
 
 </style>
