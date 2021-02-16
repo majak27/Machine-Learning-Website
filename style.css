@@ -21,6 +21,18 @@ body {
   opacity: 0.6;
   transition: 0.3s;
 }
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 
 .btn:hover {
   opacity: 0.9;
