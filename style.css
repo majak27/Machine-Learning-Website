@@ -105,7 +105,7 @@ p {
   }
 }
 @media (max-width: 625px) {
-  .row {  }
+    {}
   .btn {
     display: flex;
     flex-direction: column;
