@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
 
@@ -17,21 +16,77 @@
     <a class= "btn" href="index.html">Machine learning</a>
     <a class= "btn" href="button1.html">About pagina</a>
     <a class= "btn" href="button2.html">Contact pagina</a>
+     <a class= "btn" href="button3.html">Meer info</a>
 </div>
 
-<div class="row">
-  <div class="column side" style="background-color: #DFF3F0;"> 
-    <p> <b> Contact Area</b> </p> 
-    <p> Links </p>
-    </div>
-  <div class="column middle" style="background-color:#DFF3F0;">
-    <p> <b> Content Area </b> </p>
-    <p> Informatie </p> 
-    </div>
-  <div class="column side" style="background-color:#DFF3F0;">
-    <p> <b> Column </b> </p> 
-    </div>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #66A5AD;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<h3>Contact Formulier:</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Naam:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Uw naam is...">
+
+    <label for="lname">E-mail:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Uw e-mail...">
+
+    <label for="lname">Telefoonnummer:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Uw telefoonnummer...">
+
+    <label for="land">Land:</label>
+    <select id="land" name="land">
+      <option value="usa">USA</option>
+      <option value="duitsland">Duitsland</option>
+      <option value="engeland">Engeland</option>
+      <option value="nederland">Nederland</option>
+    </select>
+
+    <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Wat wilt u vragen?" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
 </div>
+
+</body>
+</html>
 
 <div class="footer">
   <p>Footer</p>
