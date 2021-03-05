@@ -11,21 +11,33 @@
 <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <body>
+  <style>
+.topnav1  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
 
 <div class="header"> 
   <h2><b>CONTACT</b></h2>
-    <a class= "btn" href="index.html">Home</a>
-      <div class="dropdown">
-        <a class= "btn" href="info.html">Machine learning   ▼</a>
-          <div class="dropdown-content">
-            <p><a class= "dropdown" href="wat.html">Wat is machine learning? </a></p>
-            <p><a class= "dropdown" href="methodes.html">Methodes van machine learning</a></p>
-            <p><a class= "dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a></p>
-          </div>
-      </div>
-    <a class= "btn" href="button1.html">About pagina</a>
-    <a class= "btn" href="button2.html">Contact pagina</a>
+    <div class="topnav1" id="myTopnav">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="button1.html">Aboutpagina</a>
+    <a class="btn" href="button2.html">Contactpagina</a>
     <a class= "btn" href="button3.html">Meer info</a>
+  <div class="dropdown">
+    <button class="dropbtn">Machine Learning
+    <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a class="dropdown" href="wat.html">Wat is machine learning?</a>
+    <a class="dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a>
+    <a class="dropdown" href="methodes.html">Wat zijn de methodes van machine learning?</a>
+    <a class="dropdown" href="stappen.html">Wat zijn de stappen van machine learning?</a>
+ </div>
+ </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 </div>
 
 <html>
@@ -33,8 +45,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   body {font-family: Arial, Helvetica, sans-serif;}
-
-* {box-sizing: border-box;}
+  * {box-sizing: border-box;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -45,7 +56,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color: #66A5AD;
   color: white;
@@ -96,9 +106,9 @@ input[type=submit]:hover {
   </form>
 </div>
 
-
 <div class="footer">
-  <p>Footer</p>
+  <h3> <a href="mailto:110685@st-maartenscollege.nl">110685@st-maartenscollege.nl</a> E-Mail Mark van Breda Vriesman </h3>
+  <h3> <a href="mailto:110612@st-maartenscollege.nl">110612@st-maartenscollege.nl</a> E-Mail Maja Kersten </h3>
 </div>
 
 </body>

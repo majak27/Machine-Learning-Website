@@ -11,6 +11,14 @@
 <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
+<style>
+.topnav1  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
 <body>
 <div class="topnav">
   <input type="text" placeholder="Search..">
@@ -19,18 +27,23 @@
 
 <div class="header"> 
 <h2><b>Wat is machine learning?</b></h2>
-<a class= "btn" href="index.html">Home</a>
-  <div class="dropdown">
-        <a class= "btn" href="info.html">Machine learning   ▼</a>
-          <div class="dropdown-content">
-            <p><a class= "dropdown" href="wat.html">Wat is machine learning? </a></p>
-            <p><a class= "dropdown" href="methodes.html">Methodes van machine learning</a></p>
-            <p><a class= "dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a></p>
-          </div>
-      </div>
-    <a class= "btn" href="button1.html">About pagina</a>
-    <a class= "btn" href="button2.html">Contact pagina</a>
+<div class="topnav1" id="myTopnav">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="button1.html">Aboutpagina</a>
+    <a class="btn" href="button2.html">Contactpagina</a>
     <a class= "btn" href="button3.html">Meer info</a>
+  <div class="dropdown">
+    <button class="dropbtn">Machine Learning
+    <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a class="dropdown" href="wat.html">Wat is machine learning?</a>
+    <a class="dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a>
+    <a class="dropdown" href="methodes.html">Wat zijn de methodes van machine learning?</a>
+    <a class="dropdown" href="stappen.html">Wat zijn de stappen van machine learning?</a>
+ </div>
+ </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 </div>
 
 <div class="row">
@@ -39,7 +52,7 @@
     <p>  </p>
     </div>
   <div class="column middle" style="background-color:#DFF3F0;">
-    <h1> <b>  Wat is machine learning?  </b> </h1>
+    <h1> <b>  Wat is machine learning:  </b> </h1>
     <p> 
 Machine learning is het leren aan computers “zelfstandig” dingen te kunnen doen. Dit wordt vaak gedaan door een computer allerlei informatie te geven over een bepaald onderwerp, en het zo dingen te leren herkennen.Machine learning gaat over de ontwikkeling van software die zijn eigen performance verbetert. Machine learning leunt sterk op statistische wetenschap.  </p>
    
@@ -54,7 +67,8 @@ Machine learning is het leren aan computers “zelfstandig” dingen te kunnen d
 </div>
 
 <div class="footer">
-  <p> </p>
+  <h3> <a href="mailto:110685@st-maartenscollege.nl">110685@st-maartenscollege.nl</a> E-Mail Mark van Breda Vriesman </h3>
+  <h3> <a href="mailto:110612@st-maartenscollege.nl">110612@st-maartenscollege.nl</a> E-Mail Maja Kersten </h3>
 </div>
 
 </body>

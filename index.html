@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script.js"></script>
 <title> Home </title>
-<meta charset="utf-8">
+<met
+a charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="images/favicon.png"/>
 </head>
+<style>
+html { 
+  background: url(images/background.webp) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+}
+
+.dropdown {
+  color: white;
+}
+
+</style>
 <body>
   <div class="topnav">
   <input type="text" placeholder="Search..">
 </div>
 
-<div class="header"> 
 <h2><b>HOME</b></h2>
-<nav id="hamnav">
-  <label for="hamburger">&#9776;</label>
-  <input type="checkbox" id="hamburger"/>
-  <!-- [MENU ITEMS] -->
-  <div class="hamitems">
-  <a class= "btn" href="index.html">Home</a>
-   <div class="dropdown">  
-     <a class= "btn" href="info.html">Machine learning   ▼</a>
-       <div class="dropdown-content">
-      <p><a class= "dropdown" href="wat.html">Wat is machine learning? </a></p>
-      <p><a class= "dropdown" href="methodes.html">Methodes van machine learning</a></p>
-      <p><a class= "dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a></p>
-      <p><a class= "dropdown" href="stappen.html"><p><a class= "dropdown" href="hoe.html">Wat zijn de stappen van machine learning?</a></p>
-    </div>
-    </div>
-  </div>
-<a class= "btn" href="button1.html">About pagina</a>
-<a class= "btn" href="button2.html">Contact pagina</a>
-<a class= "btn" href="button3.html">Meer info</a>
-  </div>
-</nav>
-</div>
 
+<div class="topnav" id="myTopnav">
+    <a class="btn" href="index.html">Home</a>
+    <a class="btn" href="button1.html">Aboutpagina</a>
+    <a class="btn" href="button2.html">Contactpagina</a>
+    <a class= "btn" href="button3.html">Meer info</a>
+  <div class="dropdown">
+    <button class="dropbtn">Machine Learning
+    <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a class="dropdown" href="wat.html">Wat is machine learning?</a>
+    <a class="dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a>
+    <a class="dropdown" href="methodes.html">Wat zijn de methodes van machine learning?</a>
+    <a class="dropdown" href="stappen.html">Wat zijn de stappen van machine learning?</a>
+ </div>
+ </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
+</div>
