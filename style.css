@@ -43,7 +43,8 @@ body {
 }
 
 .dropdown:hover {
-  color: #5f89a3
+  color: #5f89a3;
+  
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -123,18 +124,39 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#hamnav {
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamitems { display: flex; }
+#hamitems a {
+  width: 20%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #401408;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 823px) {
-  {}
   .column , .column.middle , .column.side {
     display: flex;
     flex-direction: column;
   }
+
 }
 @media (max-width: 625px) {
   .btn {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
   .row{
     display: flex;
@@ -152,13 +174,32 @@ p {
     display: flex;
     flex-direction: column;
 }
+#hamnav label { 
+    display: inline-block; 
+    color: #20302E;
+    background: #66A5AD ;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+}
+}   
 @media (max-width: 450px) {  
   .btn {
-    display: flex;
-    flex-direction: column;
-    border: 8px 16px;
-    margin: 2px 1px;
-    font-size: 12px;
+    display: none;
   }
   .row{
     display: flex;
