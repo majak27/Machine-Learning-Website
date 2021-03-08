@@ -152,6 +152,16 @@ body {
   transition: 0.3s;
 }
 
+table.spreadsheet {
+  border:  border: 1px solid #243844;
+  border-collapse: collapse;
+}
+
+table.spreadsheet td {
+    border: 1px solid #a6aac6;
+    text-align: left;
+    padding: 0.2em;
+}
 .dropdown {
   font-size: 16px;
   text-align: start;
