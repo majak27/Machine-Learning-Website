@@ -4,6 +4,9 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -47,12 +50,12 @@
   font-family: inherit;
   background-color: #20302E;
   text-decoration: none;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -164,10 +167,11 @@ table.spreadsheet {
 }
 
 table.spreadsheet td {
-    border: 1px solid #a6aac6;
-    text-align: left;
-    padding: 0.2em;
+  border: 1px solid #a6aac6;
+  text-align: left;
+  padding: 0.2em;
 }
+
 .dropdown {
   font-size: 16px;
   text-align: start;
@@ -367,6 +371,7 @@ a {
     display: flex;
     flex-direction: column;
   }
+
 }
 
 .img {
@@ -390,5 +395,6 @@ a {
     column-count:2
   }
 }
+
 
 </style>

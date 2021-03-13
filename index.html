@@ -3,15 +3,12 @@
 <head>
   <link rel="shortcut icon" href="images/favicon.png"/>
   <script src="script.js"></script>
-<title> Home </title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    
+  <title> Home </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />   
 </head>
+
 <style>
 html {  
   background: url(images/background.webp) no-repeat center center fixed; 
@@ -21,36 +18,28 @@ html {
   background-size: cover;
 }
 
-h2 {
+body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 80px;
+  
 }
-
+.h2 {
+  text-align: left;
+}
 .topnav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-.btn {
-  color: white;
-}
-
-.dropdown {
-  color: white;
-}
-
 </style>
-<body>
-  <div class="topnav">
-  <input type="text" placeholder="Search..">
-</div>
 
-<h2><b>HOME</b></h2>
+<body>
+<br> <br>
+  <h2><b>HOME</b></h2>
 
 <div class="topnav" id="myTopnav">
     <a class="btn" href="index.html">Home</a>
@@ -65,10 +54,10 @@ h2 {
     <a class="dropdown" href="hoe.html">Hoe wordt machine learning toegepast?</a>
     <a class="dropdown" href="methodes.html">Wat zijn de methodes van machine learning?</a>
     <a class="dropdown" href="stappen.html">Wat zijn de stappen van machine learning?</a>
- </div>
- </div>
+  </div>
+  </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-</div>
 
+</body>
 </html>
