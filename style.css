@@ -231,7 +231,19 @@ p {
 .search {
   display: flex;
   justify-content: flex-end;
+  height: 20%;
 }
+
+input[type=text1]{
+  background-color: white;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* Container for flexboxes */
 .row {
   display: -webkit-flex;
